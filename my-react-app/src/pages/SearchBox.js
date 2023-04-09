@@ -9,7 +9,7 @@ function SearchBox(props) {
 
     const onSearch = (value) => {
         console.log(value);
-        fetch(`http://127.0.0.1:8080/furniture/queryByName?name=${value}`, {
+        fetch(`https://vanessa-furniture-mall.onrender.com/furniture/queryByName?name=${value}`, {
             method: "GET",
             headers: {"Content-Type": "application/json;charset=utf-8"},
         }).then(response => response.json())

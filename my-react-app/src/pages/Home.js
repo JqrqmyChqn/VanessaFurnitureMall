@@ -30,7 +30,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        fetch("http://127.0.0.1:8080/furniture/queryAll", {
+        fetch("https://vanessa-furniture-mall.onrender.com/furniture/queryAll", {
             method: "GET",
             headers: {"Content-Type": "application/json;charset=utf-8"},
         }).then(response => response.json())

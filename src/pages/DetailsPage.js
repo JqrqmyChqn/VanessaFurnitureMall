@@ -52,7 +52,7 @@ const DetailsPage = () => {
 
     useEffect(() => {
         const username = Cookies.get('username');
-        fetch(`http://127.0.0.1:8080/furniture/queryById?id=${id}&username=${username}`, {
+        fetch(`https://vanessa-furniture-mall.onrender.com/furniture/queryById?id=${id}&username=${username}`, {
             method: "GET",
             headers: {"Content-Type": "application/json;charset=utf-8"},
         }).then(response => response.json())
